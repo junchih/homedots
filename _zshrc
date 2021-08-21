@@ -1,0 +1,38 @@
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+bindkey -v
+CASE_SENSITIVE="true"
+# End of lines configured by zsh-newuser-install
+
+export PS1=$'%n@%m:%{\e[0;36m%}%1~%{\e[0;31m%}$ %{\e[0m%}'
+export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
+
+export EDITOR="vi"
+if type "vim" > /dev/null; then
+	export EDITOR="vim"
+fi
+
+case "$OSTYPE" in
+	darwin*)
+		export CLICOLOR=1
+	;;
+	linux*)
+		alias ls="ls --color=auto"
+	;;
+	dragonfly*|freebsd*|netbsd*|openbsd*)
+	;;
+esac
+
+if [ -d "$HOME/.gopath" ]; then
+	export GOPATH="$HOME/.gopath"
+	export GOBIN="$HOME/bin"
+fi
+if type "direnv" > /dev/null; then
+	eval "$(direnv hook zsh)"
+	alias tmux='direnv exec / tmux' # tricky, copied from https://direnv.net/CHANGELOG.html, 2.6.0 / 2015-02-15
+fi
+if [ -e ~/.nix-profile/etc/profile.d/nix.sh ]; then
+	. ~/.nix-profile/etc/profile.d/nix.sh;
+fi # added by Nix installer
