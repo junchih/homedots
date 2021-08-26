@@ -11,7 +11,13 @@ export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
 export EDITOR="vi"
 if type "vim" > /dev/null; then
+	alias vi="vim"
 	export EDITOR="vim"
+fi
+if type "nvim" > /dev/null; then
+	alias vi="nvim"
+	alias vim="nvim"
+	export EDITOR="nvim"
 fi
 
 case "$OSTYPE" in
