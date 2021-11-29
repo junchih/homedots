@@ -6,11 +6,11 @@ tap "homebrew/cask-fonts"
 brew "mas"
 
 # Terminal Style
-# vim
+## vim
 brew "neovim"
 cask "vimr"
 brew "ctags"
-# terminal
+## terminal
 cask "alacritty"
 brew "tmux"
 brew "mosh"
@@ -29,24 +29,23 @@ mas "Pages", id: 409201541
 cask "drawio"
 mas "MindNode", id: 1289197285
 cask "zotero"
+mas "Haskell", id: 841285201
 mas "Bear", id: 1091189122
+cask "tor-browser"
 
-# System Maintenance
+# System Utilities
 cask "resilio-sync"
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "The Unarchiver", id: 425424353
 cask "disk-inventory-x"
+cask "transmission"
 
 # Entertainment
 cask "iina"
 cask "mudlet"
 cask "openra"
+mas "WeChat", id: 836500024
 
 # Plugins
 mas "Vimari", id: 1480933944
 cask "font-ibm-plex"
-
-# Others
-cask "transmission"
-mas "WeChat", id: 836500024
-mas "Haskell", id: 841285201
