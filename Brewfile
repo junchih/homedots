@@ -15,17 +15,24 @@ cask "alacritty"
 brew "tmux"
 brew "mosh"
 brew "direnv"
-brew "php@7.4"
 brew "tree"
 brew "watch"
 brew "wget"
 brew "telnet"
 brew "mtr"
+## dev lang
+brew "golang"
+brew "chicken"
+brew "php"
+brew "php-code-sniffer"
+brew "php-cs-fixer"
+brew "shellcheck"
 
 # Desktop Workshop
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
+cask "mark-text"
 cask "drawio"
 mas "MindNode", id: 1289197285
 cask "zotero"
@@ -44,8 +51,12 @@ cask "transmission"
 cask "iina"
 cask "mudlet"
 cask "openra"
-mas "WeChat", id: 836500024
 
 # Plugins
 mas "Vimari", id: 1480933944
 cask "font-ibm-plex"
+
+# Other
+brew "youtube-dl"
+brew "ffmpeg"
+mas "WeChat", id: 836500024

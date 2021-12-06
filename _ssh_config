@@ -1,0 +1,19 @@
+Host *
+	SendEnv LANG LC_*
+	ControlMaster auto
+	ControlPath /Users/jack/.ssh/%r@%h:%p
+
+Host lbnuc
+	HostName lbnuc.pri.func.xyz
+	User jack
+	Port 22
+
+Host lbvan
+	HostName lbvan.vc2.func.xyz
+	User jack
+	Port 22
+
+Host lbpi
+	HostName lbpi.pri.func.xyz
+	User pi
+	Port 22
