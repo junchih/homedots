@@ -58,4 +58,3 @@ cask "font-ibm-plex"
 # Other
 brew "youtube-dl"
 brew "ffmpeg"
-mas "WeChat", id: 836500024
