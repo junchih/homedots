@@ -13,7 +13,7 @@ Host lbvan
 	User jack
 	Port 22
 
-Host lbpi
-	HostName lbpi.pri.func.xyz
-	User pi
+Host lbhp
+	HostName lbhp.pri.func.xyz
+	User jack
 	Port 22

@@ -37,15 +37,14 @@ cask "drawio"
 mas "MindNode", id: 1289197285
 cask "zotero"
 mas "Haskell", id: 841285201
-mas "Bear", id: 1091189122
 cask "tor-browser"
 
 # System Utilities
 cask "resilio-sync"
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "The Unarchiver", id: 425424353
-cask "disk-inventory-x"
 cask "transmission"
+#cask "disk-inventory-x"
 
 # Entertainment
 cask "iina"
