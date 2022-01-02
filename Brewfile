@@ -20,12 +20,11 @@ brew "watch"
 brew "wget"
 brew "telnet"
 brew "mtr"
-## dev lang
-brew "golang"
-brew "chicken"
+## dev utils
 brew "php"
 brew "php-code-sniffer"
 brew "php-cs-fixer"
+brew "dolt"
 brew "shellcheck"
 
 # Desktop Workshop
@@ -36,8 +35,9 @@ cask "mark-text"
 cask "drawio"
 mas "MindNode", id: 1289197285
 cask "zotero"
-mas "Haskell", id: 841285201
 cask "tor-browser"
+mas "Sequel Ace", id: 1518036000
+mas "Haskell", id: 841285201
 
 # System Utilities
 cask "resilio-sync"
