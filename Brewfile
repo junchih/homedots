@@ -38,6 +38,7 @@ cask "zotero"
 cask "tor-browser"
 mas "Sequel Ace", id: 1518036000
 mas "Haskell", id: 841285201
+cask "zerobranestudio"
 
 # System Utilities
 cask "resilio-sync"
@@ -53,6 +54,7 @@ cask "openra"
 
 # Plugins
 mas "Vimari", id: 1480933944
+cask "love"
 cask "font-ibm-plex"
 
 # Other
