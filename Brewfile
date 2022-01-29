@@ -9,7 +9,7 @@ brew "mas"
 ## vim
 brew "neovim"
 cask "vimr"
-brew "ctags"
+brew "universal-ctags"
 ## terminal
 cask "alacritty"
 brew "tmux"
