@@ -9,7 +9,10 @@ brew "mas"
 ## vim
 brew "neovim"
 cask "vimr"
-brew "universal-ctags"
+# original ctags does the better work with lua programs, but the universal-ctags
+# is the suggesting one by relating vim plugin
+#brew "universal-ctags"
+brew "ctags"
 ## terminal
 cask "alacritty"
 brew "tmux"
@@ -39,6 +42,9 @@ cask "tor-browser"
 mas "Sequel Ace", id: 1518036000
 mas "Haskell", id: 841285201
 cask "zerobranestudio"
+mas "Xcode", id: 497799835
+cask "android-studio"
+cask "wechatwebdevtools"
 
 # System Utilities
 cask "resilio-sync"
