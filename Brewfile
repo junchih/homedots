@@ -27,8 +27,10 @@ brew "mtr"
 brew "php"
 brew "php-code-sniffer"
 brew "php-cs-fixer"
-brew "dolt"
 brew "shellcheck"
+brew "eslint"
+brew "prettier"
+brew "dolt"
 
 # Desktop Workshop
 mas "Keynote", id: 409183694
@@ -42,9 +44,6 @@ cask "tor-browser"
 mas "Sequel Ace", id: 1518036000
 mas "Haskell", id: 841285201
 cask "zerobranestudio"
-mas "Xcode", id: 497799835
-cask "android-studio"
-cask "wechatwebdevtools"
 
 # System Utilities
 cask "resilio-sync"
@@ -55,7 +54,7 @@ cask "transmission"
 
 # Entertainment
 cask "iina"
-cask "mudlet"
+#cask "mudlet"
 cask "openra"
 
 # Plugins
@@ -64,5 +63,5 @@ cask "love"
 cask "font-ibm-plex"
 
 # Other
-brew "youtube-dl"
-brew "ffmpeg"
+#brew "youtube-dl"
+#brew "ffmpeg"
