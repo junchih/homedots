@@ -23,16 +23,19 @@ brew "watch"
 brew "wget"
 brew "telnet"
 brew "mtr"
+#brew "dos2unix"
 ## dev utils
+brew "graphviz"
+brew "node"
 brew "php"
 brew "php-code-sniffer"
 brew "php-cs-fixer"
 brew "shellcheck"
-brew "eslint"
-brew "prettier"
 brew "dolt"
 
 # Desktop Workshop
+mas "WeChat", id: 836500024
+mas "Spark", id: 1176895641
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
@@ -55,7 +58,7 @@ cask "transmission"
 # Entertainment
 cask "iina"
 #cask "mudlet"
-cask "openra"
+#cask "openra"
 
 # Plugins
 mas "Vimari", id: 1480933944
