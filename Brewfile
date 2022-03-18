@@ -39,7 +39,6 @@ mas "Spark", id: 1176895641
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
-cask "mark-text"
 cask "drawio"
 mas "MindNode", id: 1289197285
 cask "zotero"
