@@ -22,11 +22,8 @@ brew "tree"
 brew "watch"
 brew "wget"
 brew "telnet"
-brew "mtr"
-#brew "dos2unix"
 ## dev utils
 brew "graphviz"
-brew "node"
 brew "php"
 brew "php-code-sniffer"
 brew "php-cs-fixer"
@@ -61,10 +58,5 @@ cask "iina"
 #cask "openra"
 
 # Plugins
-mas "Vimari", id: 1480933944
 cask "love"
 cask "font-ibm-plex"
-
-# Other
-#brew "youtube-dl"
-#brew "ffmpeg"

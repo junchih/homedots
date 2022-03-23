@@ -6,7 +6,9 @@ bindkey -v
 CASE_SENSITIVE="true"
 # End of lines configured by zsh-newuser-install
 
-# fixing git diff encoding issues
+# fix ls printing unicode correctly
+export LANG=en_US.UTF-8
+# fix git diff printing unicode correctly
 export LESSCHARSET=UTF-8
 
 export PS1=$'%n@%m:%{\e[0;36m%}%1~%{\e[0;31m%}$ %{\e[0m%}'
