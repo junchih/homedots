@@ -50,12 +50,9 @@ cask "resilio-sync"
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "The Unarchiver", id: 425424353
 cask "transmission"
-#cask "disk-inventory-x"
 
 # Entertainment
-cask "iina"
-#cask "mudlet"
-#cask "openra"
+cask "vlc"
 
 # Plugins
 cask "love"

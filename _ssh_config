@@ -3,17 +3,7 @@ Host *
 	ControlMaster auto
 	ControlPath /Users/jack/.ssh/%r@%h:%p
 
-Host lbnuc
-	HostName lbnuc.pri.func.xyz
-	User jack
-	Port 22
-
 Host lbvan
 	HostName lbvan.vc2.func.xyz
-	User jack
-	Port 22
-
-Host lbhp
-	HostName lbhp.pri.func.xyz
 	User jack
 	Port 22
