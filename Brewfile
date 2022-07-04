@@ -24,15 +24,22 @@ brew "wget"
 brew "telnet"
 ## dev utils
 brew "graphviz"
+brew "shellcheck"
+brew "dolt"
+cask "vagrant"
+### python3
+brew "python@3"
+brew "black"
+### fortran
+brew "gfortran"
+brew "fprettify"
+### php
 brew "php"
 brew "php-code-sniffer"
 brew "php-cs-fixer"
-brew "shellcheck"
-brew "dolt"
 
 # Desktop Workshop
 mas "WeChat", id: 836500024
-mas "Spark", id: 1176895641
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
@@ -47,6 +54,8 @@ cask "zerobranestudio"
 
 # System Utilities
 cask "resilio-sync"
+cask "virtualbox"
+brew "openconnect"
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "The Unarchiver", id: 425424353
 cask "transmission"
