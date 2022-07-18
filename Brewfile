@@ -19,14 +19,11 @@ brew "tmux"
 brew "mosh"
 brew "direnv"
 brew "tree"
-brew "watch"
 brew "wget"
-brew "telnet"
 ## dev utils
 brew "graphviz"
 brew "shellcheck"
 brew "dolt"
-cask "vagrant"
 ### python3
 brew "python@3"
 brew "black"
@@ -43,6 +40,7 @@ mas "WeChat", id: 836500024
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
+cask "obs"
 cask "macdown"
 cask "drawio"
 mas "MindNode", id: 1289197285
@@ -54,10 +52,11 @@ cask "zerobranestudio"
 
 # System Utilities
 cask "resilio-sync"
-cask "virtualbox"
+cask "ipfs"
 brew "openconnect"
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "The Unarchiver", id: 425424353
+cask "disk-inventory-x"
 cask "transmission"
 
 # Entertainment

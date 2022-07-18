@@ -1,0 +1,8 @@
+syntax: glob
+
+# vim stuff
+.*.sw?
+
+# for mac os noising
+.DS_Store
+._*
