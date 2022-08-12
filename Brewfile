@@ -37,7 +37,6 @@ brew "php-code-sniffer"
 brew "php-cs-fixer"
 
 # Desktop Workshop
-mas "WeChat", id: 836500024
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
@@ -49,22 +48,23 @@ mas "MindNode", id: 1289197285
 cask "tiddly"
 cask "zotero"
 cask "tor-browser"
-mas "Sequel Ace", id: 1518036000
+# mas "Sequel Ace", id: 1518036000
 cask "mongodb-compass"
 cask "redisinsight"
 mas "Haskell", id: 841285201
-cask "zerobranestudio"
+# cask "zerobranestudio"
+
+# Entertainment
+mas "WeChat", id: 836500024
+cask "vlc"
 
 # System Utilities
 brew "ipfs"
 brew "openconnect"
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "The Unarchiver", id: 425424353
-cask "disk-inventory-x"
+# cask "disk-inventory-x"
 cask "transmission"
-
-# Entertainment
-cask "vlc"
 
 # Plugins
 cask "love"
