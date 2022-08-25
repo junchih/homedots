@@ -21,6 +21,7 @@ brew "mosh"
 brew "direnv"
 brew "tree"
 brew "wget"
+brew "ipinfo-cli"
 ## dev utils
 brew "graphviz"
 brew "shellcheck"
@@ -31,6 +32,8 @@ brew "black"
 ### fortran
 brew "gfortran"
 brew "fprettify"
+### lua
+brew "stylua"
 ### php
 brew "php"
 brew "php-code-sniffer"
@@ -51,6 +54,7 @@ cask "tor-browser"
 # mas "Sequel Ace", id: 1518036000
 cask "mongodb-compass"
 cask "redisinsight"
+mas "iMazing Profile Editor", id: 1487860882
 mas "Haskell", id: 841285201
 # cask "zerobranestudio"
 

@@ -28,6 +28,8 @@ fi
 case "$OSTYPE" in
 	darwin*)
 		export CLICOLOR=1
+		# also needing colorful ls in nix-shell
+		alias ls="ls --color=auto"
 	;;
 	linux*)
 		alias ls="ls --color=auto"

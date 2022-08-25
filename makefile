@@ -6,3 +6,8 @@ $(HOME)/Brewfile: Brewfile
 
 $(HOME)/.ssh/config: _ssh_config
 	ln -s `pwd`/$< $@
+
+_vim: .gitmodules
+	git submodule init && git submodule update
+
+_vimrc: _vim
