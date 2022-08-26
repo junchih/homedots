@@ -23,9 +23,7 @@ brew "tree"
 brew "wget"
 brew "ipinfo-cli"
 ## dev utils
-brew "graphviz"
-brew "shellcheck"
-brew "csvkit"
+brew "graphviz" # graph golang benchmark
 ### python3
 brew "python@3"
 brew "black"
