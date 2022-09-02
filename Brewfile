@@ -21,15 +21,11 @@ brew "mosh"
 brew "direnv"
 brew "tree"
 brew "wget"
-brew "ipinfo-cli"
 ## dev utils
 brew "graphviz" # graph golang benchmark
 ### python3
 brew "python@3"
 brew "black"
-### fortran
-brew "gfortran"
-brew "fprettify"
 ### lua
 brew "stylua"
 ### php
