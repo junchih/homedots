@@ -18,9 +18,12 @@ brew "ctags"
 cask "alacritty"
 brew "tmux"
 brew "mosh"
+brew "croc"
 brew "direnv"
 brew "tree"
 brew "wget"
+brew "bash"
+brew "grep"
 ## dev utils
 brew "graphviz" # graph golang benchmark
 ### python3
@@ -45,25 +48,22 @@ mas "MindNode", id: 1289197285
 cask "tiddly"
 cask "zotero"
 cask "tor-browser"
-# mas "Sequel Ace", id: 1518036000
+mas "Sequel Ace", id: 1518036000
 cask "mongodb-compass"
 cask "redisinsight"
 mas "iMazing Profile Editor", id: 1487860882
 mas "Haskell", id: 841285201
-# cask "zerobranestudio"
-
-# Entertainment
 mas "WeChat", id: 836500024
-cask "vlc"
 
 # System Utilities
-brew "ipfs"
 brew "openconnect"
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "The Unarchiver", id: 425424353
-# cask "disk-inventory-x"
+cask "disk-inventory-x"
 cask "transmission"
+cask "vlc"
 
 # Plugins
 cask "love"
-cask "font-ibm-plex"
+cask "font-fira-code"
+mas "Vimari", id: 1480933944

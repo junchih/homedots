@@ -54,7 +54,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: IBM Plex Mono
+    family: Fira Code
 
   # Point size
   size: 13.0
