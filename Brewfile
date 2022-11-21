@@ -29,6 +29,9 @@ brew "graphviz" # graph golang benchmark
 ### python3
 brew "python@3"
 brew "black"
+### golang
+brew "golang"
+brew "gopls"
 ### lua
 brew "stylua"
 ### php
@@ -45,7 +48,7 @@ cask "macdown"
 cask "drawio"
 cask "obs"
 mas "MindNode", id: 1289197285
-cask "tiddly"
+cask "obsidian"
 cask "zotero"
 cask "tor-browser"
 mas "Sequel Ace", id: 1518036000
@@ -62,6 +65,7 @@ mas "The Unarchiver", id: 425424353
 cask "disk-inventory-x"
 cask "transmission"
 cask "vlc"
+cask "youdaodict"
 
 # Plugins
 cask "love"
