@@ -18,10 +18,10 @@ brew "ctags"
 cask "alacritty"
 brew "tmux"
 brew "mosh"
-brew "croc"
 brew "direnv"
 brew "tree"
 brew "wget"
+brew "croc"
 brew "bash"
 brew "grep"
 ## dev utils
@@ -29,15 +29,10 @@ brew "graphviz" # graph golang benchmark
 ### python3
 brew "python@3"
 brew "black"
-### golang
-brew "golang"
-brew "gopls"
+### javascript
+brew "deno"
 ### lua
 brew "stylua"
-### php
-brew "php"
-brew "php-code-sniffer"
-brew "php-cs-fixer"
 
 # Desktop Workshop
 mas "Keynote", id: 409183694
@@ -49,14 +44,17 @@ cask "drawio"
 cask "obs"
 mas "MindNode", id: 1289197285
 cask "obsidian"
+cask "notion"
 cask "zotero"
 cask "tor-browser"
 mas "Sequel Ace", id: 1518036000
 cask "mongodb-compass"
 cask "redisinsight"
 mas "iMazing Profile Editor", id: 1487860882
+cask "visual-studio-code"
 mas "Haskell", id: 841285201
 mas "WeChat", id: 836500024
+cask "bilibili"
 
 # System Utilities
 brew "openconnect"
@@ -68,6 +66,11 @@ cask "vlc"
 cask "youdaodict"
 
 # Plugins
+brew "sdl2"
+brew "sdl2_gfx"
+brew "sdl2_image"
+brew "sdl2_mixer"
+brew "sdl2_ttf"
 cask "love"
 cask "font-fira-code"
 mas "Vimari", id: 1480933944
