@@ -6,7 +6,11 @@ $(HOME)/Brewfile: Brewfile
 	ln -s `pwd`/$< $@
 
 
-_vim: .gitmodules
+$(HOME)/myos: myos
+	ln -s `pwd`/$< $@
+
+
+_vim myos: .gitmodules
 	git submodule init && git submodule update
 
 

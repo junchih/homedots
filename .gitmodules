@@ -1,3 +1,6 @@
 [submodule "_vim"]
 	path = _vim
 	url = git@github.com:junchih/_vim.git
+[submodule "myos"]
+	path = myos
+	url = git@github.com:junchih/my-nixos.git
