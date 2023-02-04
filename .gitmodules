@@ -4,3 +4,6 @@
 [submodule "myos"]
 	path = myos
 	url = git@github.com:junchih/my-nixos.git
+[submodule "mypkgs"]
+	path = mypkgs
+	url = git@github.com:junchih/my-nixpkgs.git

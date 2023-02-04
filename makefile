@@ -10,7 +10,11 @@ $(HOME)/myos: myos
 	ln -s `pwd`/$< $@
 
 
-_vim myos: .gitmodules
+$(HOME)/mypkgs: mypkgs
+	ln -s `pwd`/$< $@
+
+
+_vim myos mypkgs: .gitmodules
 	git submodule init && git submodule update
 
 
