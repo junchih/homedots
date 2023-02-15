@@ -18,7 +18,7 @@ window:
   # must be at least `2`, while using a value of `0` for columns and lines will
   # fall back to the window manager's recommended size.
   dimensions:
-    columns: 160
+    columns: 170
     lines: 48
 
   # Window padding (changes require restart)
@@ -57,7 +57,7 @@ font:
     family: Fira Code
 
   # Point size
-  size: 13.0
+  size: 12.0
 
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
