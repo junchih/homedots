@@ -41,7 +41,7 @@ cask "mongodb-compass"
 cask "redisinsight"
 # Desktop IDEs
 cask "vimr"
-#mas "Haskell", id: 841285201
+mas "Haskell", id: 841285201
 mas "iMazing Profile Editor", id: 1487860882
 
 mas "WeChat", id: 836500024
@@ -51,11 +51,13 @@ cask "bilibili"
 # System Apps
 cask "alacritty"
 cask "tor-browser"
+cask "clash-for-windows"
+#cask "expressvpn"
 brew "openconnect"
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "The Unarchiver", id: 425424353
-cask "disk-inventory-x"
-cask "transmission"
+#cask "disk-inventory-x"
+#cask "transmission"
 cask "iina"
 
 # System Plugins
@@ -63,8 +65,8 @@ cask "font-fira-code"
 cask "font-hanamina" # for rarely-used chinese characters
 mas "Vimari", id: 1480933944
 cask "love"
-#brew "sdl2"
-#brew "sdl2_gfx"
-#brew "sdl2_image"
-#brew "sdl2_mixer"
-#brew "sdl2_ttf"
+brew "sdl2"
+brew "sdl2_gfx"
+brew "sdl2_image"
+brew "sdl2_mixer"
+brew "sdl2_ttf"
