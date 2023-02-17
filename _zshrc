@@ -38,10 +38,13 @@ case "$OSTYPE" in
 	;;
 esac
 
-if [ -d "$HOME/.gopath" ]; then
-	export GOPATH="$HOME/.gopath"
-	export GOBIN="$HOME/bin"
-fi
+baidu.ipv6() {
+	src_port="$[ ($RANDOM % 6 * 2 + 1) * 7 + 44300 ]"
+	dst_port="1337"
+	address="baidu.ipv6.func.xyz"
+	ssh -D "${dst_port}" -p "${src_port}" -C -N "jack@${address}"
+}
+
 if type "direnv" > /dev/null; then
 	eval "$(direnv hook zsh)"
 	alias tmux='direnv exec / tmux' # tricky, copied from https://direnv.net/CHANGELOG.html, 2.6.0 / 2015-02-15
