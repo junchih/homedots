@@ -1,14 +1,13 @@
-$(HOME)/.%: _%
-	ln -s `pwd`/$< $@
+all: ~/.gitconfig ~/.tmux.conf ~/.vimrc ~/.vim ~/.zshrc
 
+~/.%: _%
+	ln -sf `pwd`/$< $@
 
-$(HOME)/Brewfile: Brewfile
-	ln -s `pwd`/$< $@
+~/Brewfile: Brewfile
+	ln -sf `pwd`/$< $@
 
-
-_vim: .gitmodules
+submodule:
 	git submodule init && git submodule update
 
-
-_vimrc: _vim
+_vim _vimrc: submodule
 

@@ -1,5 +1,7 @@
-[user]
-	email = junchih.1893@gmail.com
-	name = Jack J. Mao
+[init]
+	defaultBranch = master
 [core]
 	quotepath = off
+[user]
+	email = jack@func.xyz
+	name = Jack J. Mao

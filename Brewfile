@@ -42,20 +42,18 @@ cask "vimr"
 mas "Haskell", id: 841285201
 mas "iMazing Profile Editor", id: 1487860882
 
+# Chinese
 mas "WeChat", id: 836500024
-#cask "obs"
 cask "bilibili"
+cask "clash-for-windows"
 
 # System Apps
 cask "alacritty"
 cask "tor-browser"
-cask "clash-for-windows"
-#cask "expressvpn"
-brew "openconnect"
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "The Unarchiver", id: 425424353
-#cask "disk-inventory-x"
-#cask "transmission"
+cask "disk-inventory-x"
+cask "transmission"
 cask "iina"
 
 # System Plugins
