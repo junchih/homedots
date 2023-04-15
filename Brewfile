@@ -53,7 +53,7 @@ cask "tor-browser"
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "The Unarchiver", id: 425424353
 cask "disk-inventory-x"
-cask "transmission"
+brew "aria2"
 cask "iina"
 
 # System Plugins
