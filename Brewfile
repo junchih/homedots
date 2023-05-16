@@ -48,18 +48,17 @@ cask "bilibili"
 
 # System Apps
 cask "alacritty"
+cask "firefox"
 cask "tor-browser"
 cask "clash-for-windows"
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "The Unarchiver", id: 425424353
-cask "disk-inventory-x"
 brew "aria2"
 cask "iina"
 
 # System Plugins
 cask "font-fira-code"
 cask "font-hanamina" # for rarely-used chinese characters
-mas "Vimari", id: 1480933944
 cask "love"
 brew "sdl2"
 brew "sdl2_gfx"

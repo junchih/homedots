@@ -2,6 +2,8 @@
 	defaultBranch = master
 [core]
 	quotepath = off
+[advice]
+	detachedHead = false
 [user]
 	email = jack@func.xyz
 	name = Jack J. Mao
