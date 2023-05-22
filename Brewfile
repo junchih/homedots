@@ -1,10 +1,7 @@
 tap "homebrew/bundle"
-tap "homebrew/core"
-tap "homebrew/cask"
-cask_args require_sha: true
-tap "homebrew/services"
 tap "homebrew/cask-fonts"
 brew "mas"
+cask_args require_sha: true
 
 
 # Programming Utilities
@@ -21,36 +18,33 @@ brew "grep" # same as above
 # Terminal Commands
 brew "tree"
 brew "wget"
-brew "croc"
 cask "rar"
 brew "mosh"
 
-# Desktop Editors
+# Desktop Apps
 cask "libreoffice"
 mas "Table Tool", id: 1122008420
-cask "drawio"
 cask "macdown"
+cask "drawio"
 mas "MindNode", id: 1289197285
 cask "obsidian"
 cask "zotero"
-# DB Editors
-mas "Sequel Ace", id: 1518036000
-cask "mongodb-compass"
-cask "redisinsight"
-# Desktop IDEs
+# IDEs
 cask "vimr"
+cask "visual-studio-code"
+cask "dotnet-sdk"
 mas "Haskell", id: 841285201
+mas "Sequel Ace", id: 1518036000
 mas "iMazing Profile Editor", id: 1487860882
 
 # Chinese
 mas "WeChat", id: 836500024
-cask "bilibili"
+cask "clash-for-windows"
 
 # System Apps
 cask "alacritty"
 cask "firefox"
 cask "tor-browser"
-cask "clash-for-windows"
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "The Unarchiver", id: 425424353
 brew "aria2"

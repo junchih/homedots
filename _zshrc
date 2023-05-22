@@ -38,10 +38,10 @@ case "$OSTYPE" in
 	;;
 esac
 
-baidu.ipv6() {
+baidu.socks() {
 	src_port="$[ ($RANDOM % 6 * 2 + 1) * 7 + 44300 ]"
 	dst_port="1337"
-	address="baidu.ipv6.func.xyz"
+	address="baidu.internal.lb.func.xyz"
 	ssh -D "${dst_port}" -p "${src_port}" -C -N "jack@${address}"
 }
 

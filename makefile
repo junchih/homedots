@@ -1,4 +1,4 @@
-all: ~/.gitconfig ~/.tmux.conf ~/.vimrc ~/.vim ~/.zshrc ~/.aria2
+all: ~/.gitconfig ~/.tmux.conf ~/.vimrc ~/.vim ~/.zshrc
 
 ~/.%: _%
 	ln -sf `pwd`/$< $@
