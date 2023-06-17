@@ -46,6 +46,7 @@ cask "alacritty"
 cask "firefox"
 cask "tor-browser"
 mas "Microsoft Remote Desktop", id: 1295203466
+brew "openconnect"
 mas "The Unarchiver", id: 425424353
 brew "aria2"
 cask "iina"

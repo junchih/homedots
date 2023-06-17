@@ -45,6 +45,12 @@ baidu.socks() {
 	ssh -D "${dst_port}" -p "${src_port}" -C -N "jack@${address}"
 }
 
+sweethome() {
+	sudo openconnect \
+		--servercert 'pin-sha256:v2iRaQ5jvPsqL3aOv9J0KHHIv5rDXcXf32EjhQkt5mU=' \
+		wrt-bj.lb.func.xyz:4443
+}
+
 if type "direnv" > /dev/null; then
 	eval "$(direnv hook zsh)"
 	alias tmux='direnv exec / tmux' # tricky, copied from https://direnv.net/CHANGELOG.html, 2.6.0 / 2015-02-15
