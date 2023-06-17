@@ -47,7 +47,7 @@ baidu.socks() {
 
 sweethome() {
 	sudo openconnect \
-		--servercert 'pin-sha256:v2iRaQ5jvPsqL3aOv9J0KHHIv5rDXcXf32EjhQkt5mU=' \
+		--servercert 'pin-sha256:VmDsRRR4H+FoyHb96JjAYiyyuEP0TkdozFsVZqKodIY=' \
 		wrt-bj.lb.func.xyz:4443
 }
 
