@@ -1,0 +1,71 @@
+" options
+set nocompatible
+syntax on
+filetype on
+filetype plugin indent on
+set ruler
+set scrolloff=7
+set wildmenu
+set lazyredraw
+"set foldlevel=99
+" Disable annoying mouse
+set mouse=
+" Always show the status line
+set laststatus=2
+" backspace acts as it should
+set backspace=eol,start,indent
+" turn backup off
+set nobackup
+set nowritebackup
+set noswapfile
+" setup keys timeout
+set notimeout
+set nottimeout
+
+autocmd InsertEnter * set cul
+autocmd InsertLeave * set nocul
+
+
+" Set utf8 as standard encoding and en_US as the standard language
+set encoding=utf8
+" Use Unix as the standard file type
+set ffs=unix,dos,mac
+
+
+" about tab key
+set smartindent
+set noexpandtab
+set tabstop=4
+set shiftwidth=4
+
+
+" coding mark columns
+set colorcolumn=80,120
+
+
+" No annoying sound on errors
+set noerrorbells
+set novisualbell
+set t_vb=
+set tm=500
+" Properly disable sound on errors on MacVim
+if has("gui_macvim")
+	autocmd GUIEnter * set vb t_vb=
+endif
+
+
+" searching
+set hlsearch
+set ignorecase
+set smartcase
+set incsearch
+set magic
+
+
+" remap the leader key
+let mapleader = "," " for hhkb
+" tmux like split
+nmap <Leader>" :split<CR>
+nmap <Leader>% :vsplit<CR>
+" explore
+nnoremap - :Explore<CR>

@@ -5,9 +5,3 @@ all: ~/.gitconfig ~/.tmux.conf ~/.vimrc ~/.vim ~/.zshrc
 
 ~/Brewfile: Brewfile
 	ln -sf `pwd`/$< $@
-
-submodule:
-	git submodule init && git submodule update
-
-_vim _vimrc: submodule
-
