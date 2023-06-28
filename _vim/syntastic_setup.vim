@@ -19,11 +19,6 @@ if executable('go')
 	let g:syntastic_go_checkers = [ 'go' ]
 endif
 
-if executable('phpcs')
-	let g:syntastic_php_checkers = [ 'php', 'phpcs' ]
-	let g:syntastic_php_phpcs_args = '--standard=psr12'
-endif
-
 if executable('eslint')
 	let g:syntastic_javascript_checkers=['eslint']
 endif

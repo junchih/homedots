@@ -24,6 +24,15 @@ call plug#begin(g:vim_home.'/.plugged')
 	if executable('go')
 		Plug 'fatih/vim-go', { 'tag': 'v1.*' }
 	endif
+	" typescript
+	if executable('tsc')
+		Plug 'leafgarland/typescript-vim'
+		Plug 'Quramy/tsuquyomi'
+	endif
+	" rust
+	if executable('rustc')
+		Plug 'rust-lang/rust.vim'
+	endif
 
 call plug#end()
 
