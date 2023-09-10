@@ -45,6 +45,18 @@ baidu.socks() {
 	ssh -D "${dst_port}" -p "${src_port}" -C -N "jack@${address}"
 }
 
+proxy-setup() {
+	port="$1"
+	localip=`echo "$SSH_CLIENT" | awk '{print $1}'`
+	if [ -z "$localip" ]
+	then
+		localip="localhost"
+	fi
+	export http_proxy="http://${localip}:${port}"
+	export https_proxy="http://${localip}:${port}"
+	export all_proxy="socks5://${localip}:${port}"
+}
+
 sweethome() {
 	sudo openconnect \
 		--servercert 'pin-sha256:VmDsRRR4H+FoyHb96JjAYiyyuEP0TkdozFsVZqKodIY=' \
