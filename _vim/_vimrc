@@ -14,19 +14,17 @@ call plug#begin(g:vim_home.'/.plugged')
 	if executable('ctags')
 		Plug 'preservim/tagbar', { 'tag': 'v3.*' }
 	endif
-	"Plug 'neovim/nvim-lspconfig', { 'tag': 'v0.1.*'}
+	Plug 'neovim/nvim-lspconfig', { 'tag': 'v0.1.*' }
 
 	" syntax extensions
 	Plug 'sheerun/vim-polyglot'
+	Plug 'leafgarland/typescript-vim'
+	Plug 'pangloss/vim-javascript'
 	Plug 'rhysd/vim-goyacc'
 
 	" golang
 	if executable('go')
 		Plug 'fatih/vim-go', { 'tag': 'v1.*' }
-	endif
-	" typescript
-	if executable('tsc')
-		Plug 'leafgarland/typescript-vim'
 	endif
 	" rust
 	if executable('rustc')
@@ -41,6 +39,10 @@ exec 'source' g:vim_home.'_vimrc.min'
 
 " plugins configurations
 let setup_files = split(globpath(g:vim_home, '*_setup.vim'), '\n')
+for setup_file in setup_files
+	exec 'source' setup_file
+endfor
+let setup_files = split(globpath(g:vim_home, '*_setup.lua'), '\n')
 for setup_file in setup_files
 	exec 'source' setup_file
 endfor

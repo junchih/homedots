@@ -19,10 +19,6 @@ if executable('go')
 	let g:syntastic_go_checkers = [ 'go' ]
 endif
 
-if executable('eslint')
-	let g:syntastic_javascript_checkers=['eslint']
-endif
-
 " shell checker < brew install shellcheck >
 if executable('shellcheck')
 	let g:syntastic_sh_checkers = [ 'shellcheck' ]
