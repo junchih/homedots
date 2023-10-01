@@ -1,9 +1,9 @@
 " theme
 try
-	colorscheme onedark
+	colorscheme gruvbox
 catch
 endtry
-let g:airline_theme = 'onedark'
+let g:airline_theme = 'cool'
 set t_Co=256
 
 " fix codedark todo hightlight
