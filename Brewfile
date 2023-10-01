@@ -4,12 +4,24 @@ brew "mas"
 cask_args require_sha: true
 
 
+## golang
+brew "golang"
+brew "gopls"
+## typescript
+brew "typescript"
+brew "node"
+brew "rollup"
+brew "typescript-language-server"
+brew "prettier"
+## lua
+brew "stylua"
+## rust
+brew "rust"
+
 # Programming Utilities
 brew "neovim"
 brew "tmux"
-brew "rust"
-brew "golang"
-brew "typescript"
+brew "http-server"
 brew "zx"
 # original ctags does the better work with lua programs, but the universal-ctags
 # is the suggesting one by relating vim plugin
