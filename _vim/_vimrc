@@ -6,16 +6,11 @@ call plug#begin(g:vim_home.'/.plugged')
 
 	" themes
 	Plug 'morhetz/gruvbox'
+	Plug 'vim-airline/vim-airline-themes'
 
 	" common
-	Plug 'tpope/vim-vinegar', { 'tag': 'v1.*' }
-	Plug 'vim-syntastic/syntastic', { 'tag': '3.*' }
-	Plug 'vim-airline/vim-airline'
-	Plug 'vim-airline/vim-airline-themes'
-	if executable('ctags')
-		Plug 'preservim/tagbar', { 'tag': 'v3.*' }
-	endif
-	Plug 'neovim/nvim-lspconfig', { 'tag': 'v0.1.*' }
+	Plug 'tpope/vim-vinegar'
+	Plug 'vim-airline/vim-airline', { 'tag': 'v0.*' }
 
 	" syntax extensions
 	Plug 'sheerun/vim-polyglot'
@@ -23,14 +18,10 @@ call plug#begin(g:vim_home.'/.plugged')
 	Plug 'pangloss/vim-javascript'
 	Plug 'rhysd/vim-goyacc'
 
-	" golang
-	if executable('go')
-		Plug 'fatih/vim-go', { 'tag': 'v1.*' }
-	endif
-	" rust
-	if executable('rustc')
-		Plug 'rust-lang/rust.vim'
-	endif
+	" lsp
+	Plug 'neovim/nvim-lspconfig', { 'tag': 'v0.*' }
+	"Plug 'dense-analysis/ale', { 'tag': 'v3.*' }
+	Plug 'simrat39/symbols-outline.nvim'
 
 call plug#end()
 

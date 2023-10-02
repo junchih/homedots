@@ -19,18 +19,13 @@ brew "stylua"
 brew "rust"
 
 # Programming Utilities
-brew "neovim"
 brew "tmux"
-brew "http-server"
+brew "neovim"
 brew "zx"
-# original ctags does the better work with lua programs, but the universal-ctags
-# is the suggesting one by relating vim plugin
-#brew "universal-ctags"
-brew "ctags"
+brew "http-server"
 #brew "direnv"
 #brew "bash" # required by nix-community/nix-direnv
 #brew "grep" # same as above
-
 # Terminal Commands
 brew "tree"
 brew "wget"

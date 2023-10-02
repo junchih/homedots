@@ -1,6 +1,6 @@
 local lspconfig = require("lspconfig")
 
-if false and vim.fn.executable("gopls") then
+if vim.fn.executable("gopls") then
 	lspconfig.gopls.setup({})
 end
 if vim.fn.executable("tsserver") then
