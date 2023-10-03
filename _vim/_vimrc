@@ -10,7 +10,7 @@ call plug#begin(g:vim_home.'/.plugged')
 
 	" common
 	Plug 'tpope/vim-vinegar'
-	Plug 'vim-airline/vim-airline', { 'tag': 'v0.*' }
+	Plug 'vim-airline/vim-airline'
 
 	" syntax extensions
 	Plug 'sheerun/vim-polyglot'
@@ -19,8 +19,7 @@ call plug#begin(g:vim_home.'/.plugged')
 	Plug 'rhysd/vim-goyacc'
 
 	" lsp
-	Plug 'neovim/nvim-lspconfig', { 'tag': 'v0.*' }
-	"Plug 'dense-analysis/ale', { 'tag': 'v3.*' }
+	Plug 'neovim/nvim-lspconfig'
 	Plug 'simrat39/symbols-outline.nvim'
 
 call plug#end()

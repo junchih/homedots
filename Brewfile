@@ -17,6 +17,9 @@ brew "prettier"
 brew "stylua"
 ## rust
 brew "rust"
+brew "rust-analyzer"
+## python
+brew "pyright"
 
 # Programming Utilities
 brew "tmux"

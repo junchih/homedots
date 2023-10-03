@@ -1,10 +1,19 @@
 local lspconfig = require("lspconfig")
 
-if vim.fn.executable("gopls") then
+if vim.fn.executable("gopls") == 1 then
 	lspconfig.gopls.setup({})
 end
-if vim.fn.executable("tsserver") then
+if vim.fn.executable("typescript-language-server") == 1 then
 	lspconfig.tsserver.setup({})
+end
+if vim.fn.executable("clangd") == 1 then
+	lspconfig.clangd.setup({})
+end
+if vim.fn.executable("rust-analyzer") == 1 then
+	lspconfig.rust_analyzer.setup({})
+end
+if vim.fn.executable("pyright-langserver") == 1 then
+	lspconfig.pyright.setup({})
 end
 
 -- Global mappings.
