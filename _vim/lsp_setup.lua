@@ -6,6 +6,9 @@ end
 if vim.fn.executable("typescript-language-server") == 1 then
 	lspconfig.tsserver.setup({})
 end
+if vim.fn.executable("deno") == 1 then
+	-- lspconfig.denols.setup({})
+end
 if vim.fn.executable("clangd") == 1 then
 	lspconfig.clangd.setup({})
 end
