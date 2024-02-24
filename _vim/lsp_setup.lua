@@ -9,6 +9,9 @@ end
 if vim.fn.executable("deno") == 1 then
 	-- lspconfig.denols.setup({})
 end
+if vim.fn.executable("bash-language-server") == 1 then
+	lspconfig.bashls.setup({})
+end
 if vim.fn.executable("clangd") == 1 then
 	lspconfig.clangd.setup({})
 end
