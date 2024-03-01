@@ -46,15 +46,10 @@ baidu.socks() {
 }
 
 proxy-setup() {
-	port="$1"
-	localip=`echo "$SSH_CLIENT" | awk '{print $1}'`
-	if [ -z "$localip" ]
-	then
-		localip="localhost"
-	fi
-	export http_proxy="http://${localip}:${port}"
-	export https_proxy="http://${localip}:${port}"
-	export all_proxy="socks5://${localip}:${port}"
+	addr="$1"
+	export http_proxy="http://${addr}"
+	export https_proxy="http://${addr}"
+	export all_proxy="socks5://${addr}"
 }
 
 sweethome() {

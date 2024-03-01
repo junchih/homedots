@@ -1,0 +1,31 @@
+live_config_reload = true
+
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[font]
+size = 13.0
+
+[font.normal]
+family = "Fira Code"
+
+[mouse]
+hide_when_typing = false
+
+[shell]
+args = ["--login"]
+program = "zsh"
+
+[window]
+dynamic_padding = true
+dynamic_title = true
+opacity = 0.9
+title = "term"
+
+[window.dimensions]
+columns = 170
+lines = 48
+
+[window.padding]
+x = 1
+y = 1

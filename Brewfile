@@ -13,22 +13,20 @@ brew "node"
 brew "rollup"
 brew "typescript-language-server"
 brew "prettier"
+brew "deno"
+## bash
+brew "bash-language-server"
+brew "shellcheck"
 ## lua
 brew "stylua"
-## rust
-brew "rust"
-brew "rust-analyzer"
 ## python
+brew "pipenv"
 brew "pyright"
 
 # Programming Utilities
 brew "tmux"
 brew "neovim"
-brew "zx"
 brew "http-server"
-#brew "direnv"
-#brew "bash" # required by nix-community/nix-direnv
-#brew "grep" # same as above
 # Terminal Commands
 brew "tree"
 brew "wget"
@@ -55,7 +53,6 @@ mas "iMazing Profile Editor", id: 1487860882
 # System Apps
 cask "alacritty"
 cask "firefox"
-#cask "tor-browser"
 mas "Microsoft Remote Desktop", id: 1295203466
 brew "openconnect"
 mas "The Unarchiver", id: 425424353
