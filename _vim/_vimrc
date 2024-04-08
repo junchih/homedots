@@ -13,7 +13,8 @@ call plug#begin(g:vim_home.'/.plugged')
 	Plug 'vim-airline/vim-airline'
 
 	" syntax extensions
-	Plug 'sheerun/vim-polyglot'
+	"the csv plugin it bringing in made the document very hard to read
+	"Plug 'sheerun/vim-polyglot'
 	Plug 'leafgarland/typescript-vim'
 	Plug 'pangloss/vim-javascript'
 	Plug 'rhysd/vim-goyacc'
