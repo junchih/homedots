@@ -3,11 +3,39 @@ local lspconfig = require("lspconfig")
 if vim.fn.executable("gopls") == 1 then
 	lspconfig.gopls.setup({})
 end
+if false and vim.fn.executable("lua-language-server") == 1 then
+	-- This plugin is from chinese. It's slow, unstable and reporting wrong
+	-- warning. But since there is no others, disable it and wait to be
+	-- completed.
+	lspconfig.lua_ls.setup({
+		on_init = function(client)
+			local path = client.workspace_folders[1].name
+			if vim.loop.fs_stat(path .. "/.luarc.json") or vim.loop.fs_stat(path .. "/.luarc.jsonc") then
+				return
+			end
+
+			client.config.settings.Lua = vim.tbl_deep_extend("force", client.config.settings.Lua, {
+				telemetry = {
+					enable = false,
+				},
+				runtime = {
+					version = "Lua 5.1",
+				},
+				workspace = {
+					checkThirdParty = false,
+					library = {
+						vim.env.VIMRUNTIME,
+					},
+				},
+			})
+		end,
+	})
+end
 if vim.fn.executable("typescript-language-server") == 1 then
 	lspconfig.tsserver.setup({})
 end
-if vim.fn.executable("deno") == 1 then
-	-- lspconfig.denols.setup({})
+if false and vim.fn.executable("deno") == 1 then
+	lspconfig.denols.setup({})
 end
 if vim.fn.executable("bash-language-server") == 1 then
 	lspconfig.bashls.setup({})
