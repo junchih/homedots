@@ -46,6 +46,9 @@ end
 if vim.fn.executable("rust-analyzer") == 1 then
 	lspconfig.rust_analyzer.setup({})
 end
+if vim.fn.executable("pylsp") == 1 then
+	lspconfig.pylsp.setup({})
+end
 if vim.fn.executable("pyright-langserver") == 1 then
 	lspconfig.pyright.setup({})
 end
